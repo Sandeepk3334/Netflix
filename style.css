@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Martel sans","Poppins";
+}
+body{
+    background: url(assests/background.jpeg);
+    position: relative;
+    background-size: cover;
+    
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+}
+header{
+    padding: 0 3vw;
+    height: 95vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+}
+.logo img{
+    width: 150px;
+}
+
+
+.btn{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px 5px 30px;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 0.875rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: rgb(241, 241, 241);
+    border: none;
+    padding: 5px 16px 5px 16px;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 0.875rem;
+    cursor: pointer;
+
+}
+
+.nav-content{
+    background: rgba(0, 0, 0, 0.8);
+    background-image: url(assests/background.jpeg);
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5%;
+    box-sizing: border-box;
+    line-height: 1.5;
+    z-index: 2;
+    box-shadow: 0px 0px 9px 1px black;
+}
+.nav-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.nav-content h2{
+    margin-top: 20px;
+    color: white;
+}
+.nav-content h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 20px;
+    color: white;
+}
+
+.nav-content > div {
+    width: 55%;
+    text-align: center;
+}
+
+.navinput{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.navinput input{
+    background: transparent;
+    font-size: 1rem;
+    color: aliceblue;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-right: 10px;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+}
+.navinput input::placeholder{
+    color: aliceblue;
+}
+
+.getStarted{
+    background-color: red;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+}
+
+.trending{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 53vh;
+    position: relative;
+}
+.trending h1{
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+.poster{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+}
+.cards{
+    background-color: black;
+    width:130px ;
+    height: 100%;
+    border-radius: 30px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.cards:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.cards h1{
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: -5%;
+    left: -15%;
+    z-index: 2;
+    text-shadow: 
+        -2px -2px 0 rgb(255, 255, 255),  
+         2px -2px 0 rgb(255, 255, 255),  
+        -2px  2px 0 rgb(255, 255, 255),  
+         2px  2px 0 rgb(255, 255, 255);
+
+}
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* features section */
+.features{
+    margin-top: 3%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+.features h1{
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    margin-bottom: 1%;
+
+}
+.feature-card{
+    width: 80%;
+    height: 70%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.fcard{
+    color: whitesmoke;
+    background-color: black;
+    width: 24%;
+    height: 100%;
+    padding: 2%;
+    box-sizing: border-box;border-radius: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+
+
+}
+.fcard h3{
+    line-height: 1;
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+.fcard p{
+    line-height: 1.2;
+    font-weight: 500;
+    color: grey;
+}
+.fcard img{
+    width: 50px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+
+/* faqs section */
+.faq{
+    position: relative;
+    color: white;
+    margin-top: 2%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgb(0 0 0 / 0%) 10%, rgba(0, 0, 0, 1) 100%);
+}
+.faq h1{
+    font-weight: bolder;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    margin-bottom: 1%;
+
+}
+.questions{
+    width: 80%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ques-card{
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    margin-bottom: 1%;
+    box-sizing: border-box;
+
+}
+.ques-card:hover{
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+.ques-card h2{
+    font-size: 1.3rem;
+}
+.ques-card img{
+    filter: invert(100%);
+}
+.subscription{
+    text-align: center;
+}
+.subscription h3{
+font-size: 1rem;
+    font-weight: 400;
+    margin-top: 20px;
+    color: white;
+}
+
+footer{
+    background-color: rgb(0, 0, 0,1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+footer> div{
+    width: 80%;
+}
+footer h3{
+    margin-bottom: 1%;
+}
+footer button{
+    margin-bottom: 3%;
+}
+footer h4{
+    margin-bottom: 3%;
+}
+.links{
+    margin-bottom: 3%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px 10px;
+}
+.links a{
+    color: white;
+    font-size: 0.9rem;
+}
+.links ul li{
+    list-style: none;
+}
+
+@media (max-width : 1150px) {
+    .feature-card{
+        margin-top: 7%;
+    }
+    .cards{
+        width: 125px;
+        height: 95%;
+    }
+    .poster{
+        margin-top: 7%;
+    }
+    .cards:nth-child(6){
+        display: none;
+    }
+    .fcard h3{
+        font-size: 1.1rem;
+    }
+    .fcard p{
+        font-size: 0.8rem;
+    }
+    .questions{
+        margin-top: 16%;
+    }
+    footer{
+        padding-top: 10%;
+    }
+    
+}
+
+@media (max-width : 960px){
+    header{
+        height: 75vh;
+    }
+    .logo img{
+        visibility: hidden;
+    }
+    .logo{
+        background: url(assests/logo.svg) no-repeat;
+    }
+    .poster{
+        width: 90%;
+    }
+    .trending h1{
+        left: 5%;
+    }
+    .nav-content h1{
+        font-size: 2rem;
+        font-weight: 900;
+        color: white;
+    }
+    .nav-content h2{
+        margin-top: 15px;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .nav-content h3{
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-top: 20px;
+        color: white;
+    }
+    .features{
+        height: 54vh;
+    }
+    .fcard {
+        width: 100%;
+        height: 24%;
+        padding: 2% 18% 2% 2%;
+    }
+    .fcard h3{
+        font-size: 0.8rem;
+    }
+    .fcard p{
+        font-size: 13px;
+    }
+    .feature-card{
+        width: 90%;
+        flex-direction: column;
+        margin-top: 8%;
+        height: 100%;
+    }
+    .trending >h1 {
+        font-size: 1.8rem;
+    }
+    .features h1{
+        font-size: 1.8rem;
+        left: 4%;
+    }
+    .faq h1{
+        font-size: 1.8rem;
+        margin-top: 3%;
+        left: 4%;
+    }
+    .questions{
+        width: 90%;
+        margin-top: 22%;
+    }
+    footer{
+        padding-top: 14%;
+    }
+    footer> div {
+        width: 90%;
+    }
+
+}
+
+@media (max-width : 815px){
+    .cards {
+        width: 100px;
+        height: 80%;
+    }
+    .cards h1{
+        font-size: 4rem;
+    }
+    .poster {
+        margin-top: 10%;
+        height: 70%;
+    }
+    .links{
+        height: 40vh;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .links a{
+        font-size: 0.8rem;
+    }
+    .features{
+        margin-top: -7%;
+    }
+    .feature-card{
+        margin-top: 10%;
+    }
+    .faq{
+        margin-top: 5%;
+    }
+    .nav-content h2 {
+        font-size: 1rem;
+    }
+    footer h3 {
+        margin-bottom: 5%;
+
+}
+}
+
+@media (max-width : 720px){
+    .questions {
+        padding-top: 3%;
+}
+
+@media (max-width : 680px){
+    .nav-content > div{
+        width: 90% ;
+    }
+    .nav-content h1{
+        font-size: 1.5rem;
+    }
+    .cards:nth-child(5){
+        display: none;
+    }
+    .subscription {
+        width: 85%;
+    }
+}}
+
+@media (max-width : 600px){
+    .questions {
+        padding-top: 10%;
+}
+footer {
+    padding-top: 17%;
+}
+}
+
+@media (max-width : 575px){
+    .trending >h1 {
+        font-size: 1.2rem;
+        top: 10%;
+    }
+    .features h1 {
+        font-size: 1.2rem;
+    }
+    .features {
+        height: 90vh;
+    }
+    .fcard h3 {
+        font-size: 1rem;
+    }
+    .fcard p {
+        font-size: 15px;
+    }
+    .faq h1 {
+        font-size: 1.2rem;
+        margin-top: 3%;
+        left: 4%;
+    }
+    .ques-card h2 {
+        font-size: 0.8rem;
+    }
+    .ques-card img {
+        width: 19px;
+}
+.questions{
+    padding-top: 0;
+    margin-top: 16%;
+}
+.susinput{
+    flex-direction: column;
+}
+.susinput input{
+    text-align: left;
+    width: 85%;
+    margin-bottom: 1%;
+}
+.susinput button{
+    width: 100%;
+}
+.faq{
+    height: 110vh;
+}}
+
+@media (max-width : 480px){
+    .logo{
+        width: 20px;
+        position: relative;
+        top: 7%;
+        left: 2%;
+    }
+    nav{
+        height: 10vh;
+    }
+    header{
+        height: 55vh;
+    }
+    .navinput{
+        flex-direction: column;
+    }
+    .navinput input{
+        text-align: left;
+        width: 80%;
+        margin-bottom: 1%;
+    }
+    .navinput button{
+        width: 100%;
+    }
+    .trending >h1 {
+        top: 10%;
+    }
+    .cards{
+        height: 88%;
+    }
+    .trending{
+        height: 35vh;
+    }
+    .fcard{
+        height: 20%;
+    }
+    .features{
+        height: 60vh;
+    }
+    .feature-card {
+        margin-top: 13%;
+        height: 65%;
+}
+.fcard h3 {
+    font-size: 0.8rem;
+}
+.fcard p {
+    font-size: 12px;
+}
+.fcard img{
+    width: 35px;
+}
+.faq{
+    height: 55vh;
+}
+.faq h1 {
+    margin-top: -28%;}
+    .questions {
+        margin-top: -18%;
+    }
+.cards{
+    width: 75px;
+}
+
+}
